@@ -29,7 +29,7 @@ const sendMessage = (msg) => {
       lastErrored = Date.now();
     }
   });
-  req.submit();
+  req.submit(() => {});
 };
 
 const cleanMessage = (message) => {
